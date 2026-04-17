@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Bytecomtec - Catálogo</title>
     <style>
         :root {
@@ -23,19 +23,19 @@
             align-items: center;
         }
 
-        /* Logo al 50% de percepción visual */
+        /* --- LOGO --- */
         .header-logo {
             width: 100%;
             max-width: 450px;
             text-align: center;
             padding: 5px 0 15px 0;
         }
-
         .header-logo img {
-            width: 45%; /* Ajustado para que se vea equilibrado en móviles */
+            width: 45%; 
             height: auto;
         }
 
+        /* --- GRID PRINCIPAL --- */
         .catalog-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -56,17 +56,78 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            transition: transform 0.1s;
         }
-
         .card:active { transform: scale(0.96); background: #fafafa; }
         .card h3 { font-size: 0.8rem; margin: 8px 0 0 0; line-height: 1.1; }
         .icon { font-size: 24px; }
-
         .full-width { grid-column: span 2; }
         .highlight { background: #eff6ff; border-color: #bfdbfe; }
         .success { background: #f0fdf4; border-color: #bbf7d0; }
 
-        /* Botón Inferior Web */
+        /* --- ESTILOS DEL MODAL (RESPONSIVO MÓVIL) --- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0; top: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            backdrop-filter: blur(3px);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            width: 90%;
+            max-width: 420px;
+            height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        .close {
+            position: sticky;
+            top: 0;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        /* --- FICHAS DE PRODUCTO DENTRO DEL MODAL --- */
+        .brand-block { margin-bottom: 30px; }
+        .brand-logo-center { text-align: center; margin: 15px 0; }
+        .brand-logo-center img { height: 25px; width: auto; }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            padding: 10px;
+        }
+        .product-img {
+            width: 100%;
+            height: 130px;
+            object-fit: contain;
+            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 10px;
+        }
+        .product-info h4 { margin: 5px 0; font-size: 0.95rem; color: var(--primary); }
+        .product-info ul { margin: 0; padding-left: 20px; font-size: 0.8rem; color: #555; }
+
+        /* --- FOOTER WEB --- */
         .web-footer {
             width: 100%;
             max-width: 450px;
@@ -76,9 +137,7 @@
             border-radius: 12px;
             color: white;
             text-align: center;
-            box-sizing: border-box;
         }
-
         .btn-web {
             display: inline-block;
             background: white;
@@ -99,42 +158,43 @@
     </div>
 
     <div class="catalog-grid">
-        <div class="card full-width highlight" onclick="location.href='URL_PANTALLAS'">
+        <div class="card full-width highlight" onclick="openModal('modalPantallas')">
             <span class="icon">🖥️</span>
             <h3>Pantallas Interactivas y Proyectores</h3>
+            <small style="color: var(--primary); font-size: 0.65rem; margin-top: 5px;">VER MODELOS</small>
         </div>
 
-        <div class="card" onclick="location.href='URL_AUDIO'">
+        <div class="card" onclick="openModal('modalAudio')">
             <span class="icon">📢</span>
             <h3>Audio Escolar</h3>
         </div>
 
-        <div class="card" onclick="location.href='URL_REDES'">
+        <div class="card" onclick="openModal('modalRedes')">
             <span class="icon">🌐</span>
             <h3>Redes y Wi-Fi</h3>
         </div>
 
-        <div class="card" onclick="location.href='URL_COMPUTADORAS'">
+        <div class="card" onclick="openModal('modalComputo')">
             <span class="icon">💻</span>
             <h3>Cómputo y Smart TVs</h3>
         </div>
 
-        <div class="card" onclick="location.href='URL_CONMUTADORES'">
+        <div class="card" onclick="openModal('modalConmutadores')">
             <span class="icon">📞</span>
             <h3>Conmutadores</h3>
         </div>
 
-        <div class="card" onclick="location.href='URL_CCTV'">
+        <div class="card" onclick="openModal('modalCCTV')">
             <span class="icon">🛡️</span>
             <h3>Videovigilancia (CCTV)</h3>
         </div>
 
-        <div class="card" onclick="location.href='URL_ACCESO'">
+        <div class="card" onclick="openModal('modalAcceso')">
             <span class="icon">🔑</span>
             <h3>Control de Acceso</h3>
         </div>
 
-        <div class="card full-width success" onclick="location.href='URL_SOPORTE'">
+        <div class="card full-width success" onclick="openModal('modalSoporte')">
             <span class="icon">🛠️</span>
             <h3>Soporte y Pólizas de Servicio</h3>
         </div>
@@ -147,5 +207,94 @@
 
     <p style="font-size: 0.6rem; color: #bbb; margin-top: 15px;">&copy; 2026 Bytecomtec</p>
 
+    <div id="modalPantallas" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalPantallas')">&times;</span>
+            <h2 style="text-align:center; font-size: 1.1rem; color: #333;">Soluciones Visuales</h2>
+            
+            <div class="brand-block">
+                <div class="brand-logo-center"><img src="logo-huawei.png" alt="Huawei"></div>
+                <div class="product-card">
+                    <img src="huawei-65.jpg" class="product-img" alt="IHB2-65PB">
+                    <div class="product-info">
+                        <h4>IHB2-65PB</h4>
+                        <ul>
+                            <li>Resolución 4K UHD</li>
+                            <li>Escritura ultra fluida (16ms)</li>
+                            <li>Cámara y micros integrados</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="huawei-75.jpg" class="product-img" alt="DS-D5C75RB">
+                    <div class="product-info">
+                        <h4>DS-D5C75RB/B2L (EDLA)</h4>
+                        <ul>
+                            <li>Certificación Google Oficial</li>
+                            <li>Acceso nativo a Play Store</li>
+                            <li>75 Pulgadas 4K</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-block">
+                <div class="brand-logo-center"><img src="logo-hikvision.png" alt="Hikvision"></div>
+                <div class="product-card">
+                    <img src="hik-65.jpg" class="product-img" alt="DS-D5C65RB">
+                    <div class="product-info">
+                        <h4>DS-D5C65RB/A2L (EDLA)</h4>
+                        <ul>
+                            <li>Android 13 certificado</li>
+                            <li>Tecnología Zero-gap</li>
+                            <li>Protección ocular avanzada</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="brand-block">
+                <div class="brand-logo-center"><img src="logo-epson.png" alt="Epson"></div>
+                <div class="product-card">
+                    <img src="epson-e24.jpg" class="product-img" alt="PowerLite E24">
+                    <div class="product-info">
+                        <h4>PowerLite E24 / V11H983020</h4>
+                        <ul>
+                            <li>3,500 Lúmenes de brillo</li>
+                            <li>Tecnología 3LCD color real</li>
+                            <li>Vida útil lámpara 12,000h</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="closeModal('modalPantallas')" style="width:100%; padding:15px; border-radius:12px; border:none; background:#eee; font-weight:bold; cursor:pointer;">Cerrar Catálogo</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal(id) {
+            var modal = document.getElementById(id);
+            if(modal) {
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden"; // Bloquea scroll fondo
+            } else {
+                alert("Contenido en desarrollo: Pronto verás más modelos aquí.");
+            }
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+
+        // Cerrar al tocar fuera del cuadro blanco
+        window.onclick = function(event) {
+            if (event.target.className === 'modal') {
+                event.target.style.display = "none";
+                document.body.style.overflow = "auto";
+            }
+        }
+    </script>
 </body>
 </html>
