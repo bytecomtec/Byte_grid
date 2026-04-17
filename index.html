@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo Tecnológico Integral</title>
+    <title>Bytecomtec - Catálogo Integral</title>
     <style>
         :root {
-            --primary: #1a73e8; /* Azul tecnológico */
-            --accent: #34a853;  /* Verde para pólizas y soporte */
-            --bg: #f8f9fa;
+            --primary: #1a73e8;
+            --accent: #34a853;
+            --bg: #fdfdfd;
             --text: #202124;
+            --white: #ffffff;
         }
 
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
             background-color: var(--bg);
             color: var(--text);
             margin: 0;
-            padding: 20px 10px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        header {
+        /* Contenedor del Logo */
+        .header-logo {
+            width: 100%;
+            max-width: 450px;
             text-align: center;
-            margin-bottom: 25px;
+            padding: 10px 0 20px 0;
         }
 
-        h1 { font-size: 1.4rem; margin-bottom: 5px; color: var(--primary); }
-        p { font-size: 0.9rem; color: #5f6368; margin: 0; }
+        .header-logo img {
+            max-width: 220px; /* Ajusta según el tamaño de tu logo */
+            height: auto;
+        }
 
-        /* Contenedor principal estilo Bento Grid */
         .catalog-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -40,83 +45,104 @@
             max-width: 450px;
         }
 
-        /* Tarjeta base */
+        /* Tarjetas */
         .card {
-            background: white;
-            border-radius: 15px;
-            padding: 15px;
+            background: var(--white);
+            border-radius: 16px;
+            padding: 18px 10px;
             text-align: center;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
             cursor: pointer;
-            transition: transform 0.1s, box-shadow 0.2s;
+            transition: all 0.2s ease;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            border: 1px solid #e0e0e0;
+            border: 1px solid #eeeeee;
         }
 
         .card:active {
-            transform: scale(0.96);
-            background-color: #f1f3f4;
+            transform: scale(0.95);
+            background-color: #f8f9fa;
         }
 
         .card h3 {
             font-size: 0.85rem;
-            margin: 8px 0 0 0;
-            font-weight: 600;
+            margin: 10px 0 0 0;
+            line-height: 1.2;
         }
 
-        /* Iconos simulados (puedes reemplazarlos con imágenes reales o SVG) */
-        .icon {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
+        .icon { font-size: 28px; }
 
-        /* Estilos Destacados para romper el encasillamiento */
-        .full-width { grid-column: span 2; min-height: 80px; }
-        
-        .edu-tech { background: #e8f0fe; border-color: var(--primary); }
-        .support { background: #e6f4ea; border-color: var(--accent); }
-        
-        .support h3 { color: #0d652d; }
-        .edu-tech h3 { color: #174ea6; }
+        /* Variantes de tarjetas */
+        .full-width { grid-column: span 2; }
+        .highlight { background: #eff6ff; border-color: #bfdbfe; }
+        .success { background: #f0fdf4; border-color: #bbf7d0; }
 
-        footer {
-            margin-top: 30px;
-            font-size: 0.75rem;
-            color: #70757a;
+        /* Sección de Página Web / Footer */
+        .web-footer {
+            width: 100%;
+            max-width: 450px;
+            margin-top: 25px;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            border-radius: 16px;
+            color: white;
             text-align: center;
+            box-sizing: border-box;
+            box-shadow: 0 10px 20px rgba(26, 115, 232, 0.2);
         }
+
+        .web-footer h2 { font-size: 1.1rem; margin: 0 0 10px 0; }
+        .web-footer p { font-size: 0.85rem; margin-bottom: 15px; opacity: 0.9; }
+
+        .btn-web {
+            display: inline-block;
+            background: white;
+            color: #1a73e8;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .btn-web:active { background: #e8f0fe; }
+
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Soluciones Tecnológicas</h1>
-        <p>Infraestructura, Seguridad y Educación Digital</p>
-    </header>
+    <div class="header-logo">
+        <img src="logo-bytecomtec.png" alt="Bytecomtec Logo">
+    </div>
 
     <div class="catalog-grid">
         
-        <div class="card full-width edu-tech" onclick="location.href='URL_PANTALLAS'">
+        <div class="card full-width highlight" onclick="location.href='URL_PANTALLAS'">
             <span class="icon">🖥️</span>
             <h3>Pantallas Interactivas y Proyectores</h3>
         </div>
 
         <div class="card" onclick="location.href='URL_AUDIO'">
             <span class="icon">📢</span>
-            <h3>Audio Escolar y de Red</h3>
+            <h3>Audio Escolar</h3>
+        </div>
+
+        <div class="card" onclick="location.href='URL_REDES'">
+            <span class="icon">🌐</span>
+            <h3>Redes y Wi-Fi</h3>
         </div>
 
         <div class="card" onclick="location.href='URL_COMPUTADORAS'">
             <span class="icon">💻</span>
-            <h3>Computadoras y Smart TVs</h3>
+            <h3>Cómputo y Smart TVs</h3>
         </div>
 
-        <div class="card full-width" onclick="location.href='URL_REDES'">
-            <span class="icon">🌐</span>
-            <h3>Redes Cableadas, Wi-Fi y Conmutadores</h3>
+        <div class="card" onclick="location.href='URL_CONMUTADORES'">
+            <span class="icon">📞</span>
+            <h3>Conmutadores</h3>
         </div>
 
         <div class="card" onclick="location.href='URL_CCTV'">
@@ -126,19 +152,23 @@
 
         <div class="card" onclick="location.href='URL_ACCESO'">
             <span class="icon">🔑</span>
-            <h3>Biométricos y Videoporteros</h3>
+            <h3>Control de Acceso</h3>
         </div>
 
-        <div class="card full-width support" onclick="location.href='URL_POLIZAS'">
+        <div class="card full-width success" onclick="location.href='URL_SOPORTE'">
             <span class="icon">🛠️</span>
-            <h3>Pólizas de Mantenimiento y Soporte Técnico</h3>
+            <h3>Soporte y Pólizas de Servicio</h3>
         </div>
 
     </div>
 
-    <footer>
-        Presione cualquier categoría para ver videos y fichas técnicas.
-    </footer>
+    <div class="web-footer">
+        <h2>¿Necesita más información?</h2>
+        <p>Explore nuestro sitio oficial para conocer más proyectos y soluciones.</p>
+        <a href="https://tudominio.com" class="btn-web">Visitar Página Web</a>
+    </div>
+
+    <p style="font-size: 0.7rem; color: #999; margin-top: 20px;">Bytecomtec &copy; 2026</p>
 
 </body>
 </html>
