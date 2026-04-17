@@ -3,58 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Servicios</title>
+    <title>Catálogo Tecnológico Integral</title>
     <style>
-        body { font-family: sans-serif; background: #f4f4f9; margin: 0; padding: 15px; }
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-            gap: 12px;
-            max-width: 500px;
-            margin: auto;
+        :root {
+            --primary: #1a73e8; /* Azul tecnológico */
+            --accent: #34a853;  /* Verde para pólizas y soporte */
+            --bg: #f8f9fa;
+            --text: #202124;
         }
-        .item {
-            background: #fff;
-            border-radius: 12px;
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 20px 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        h1 { font-size: 1.4rem; margin-bottom: 5px; color: var(--primary); }
+        p { font-size: 0.9rem; color: #5f6368; margin: 0; }
+
+        /* Contenedor principal estilo Bento Grid */
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            width: 100%;
+            max-width: 450px;
+        }
+
+        /* Tarjeta base */
+        .card {
+            background: white;
+            border-radius: 15px;
             padding: 15px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.1s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e0e0e0;
         }
-        .item:active { transform: scale(0.95); }
-        .item img { width: 50px; height: 50px; margin-bottom: 8px; }
-        .item h3 { font-size: 0.9rem; margin: 0; color: #333; }
+
+        .card:active {
+            transform: scale(0.96);
+            background-color: #f1f3f4;
+        }
+
+        .card h3 {
+            font-size: 0.85rem;
+            margin: 8px 0 0 0;
+            font-weight: 600;
+        }
+
+        /* Iconos simulados (puedes reemplazarlos con imágenes reales o SVG) */
+        .icon {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        /* Estilos Destacados para romper el encasillamiento */
+        .full-width { grid-column: span 2; min-height: 80px; }
         
-        /* El primero ocupa 2 columnas para destacar que son más que CCTV */
-        .destacado { grid-column: span 2; background: #1a73e8; color: white; }
-        .destacado h3 { color: white; }
-    </style>
-</head>
-<body>
-
-    <div style="text-align:center; padding-bottom:20px;">
-        <h2>Nuestro Catálogo</h2>
-    </div>
-
-    <div class="grid-container">
-        <div class="item destacado" onclick="window.location.href='URL_VIDEO_CCTV'">
-            <h3>Sistemas de Videovigilancia</h3>
-        </div>
-
-        <div class="item" onclick="window.location.href='URL_FLYER_PANTALLAS'">
-            <h3>Pantallas Interactivas</h3>
-        </div>
-
-        <div class="item" onclick="window.location.href='URL_FLYER_REDES'">
-            <h3>Redes & Wi-Fi</h3>
-        </div>
-
-        <div class="item" onclick="window.location.href='URL_VIDEO_AUDIO'">
-            <h3>Audio Escolar</h3>
-        </div>
+        .edu-tech { background: #e8f0fe; border-color: var(--primary); }
+        .support { background: #e6f4ea; border-color: var(--accent); }
         
-        </div>
-
-</body>
-</html>
+        .support h3 { color: #0d652d; }
+        .edu-tech h3 { color: #
