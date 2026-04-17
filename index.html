@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Servicios</title>
+    <style>
+        body { font-family: sans-serif; background: #f4f4f9; margin: 0; padding: 15px; }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+            gap: 12px;
+            max-width: 500px;
+            margin: auto;
+        }
+        .item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .item:active { transform: scale(0.95); }
+        .item img { width: 50px; height: 50px; margin-bottom: 8px; }
+        .item h3 { font-size: 0.9rem; margin: 0; color: #333; }
+        
+        /* El primero ocupa 2 columnas para destacar que son más que CCTV */
+        .destacado { grid-column: span 2; background: #1a73e8; color: white; }
+        .destacado h3 { color: white; }
+    </style>
+</head>
+<body>
+
+    <div style="text-align:center; padding-bottom:20px;">
+        <h2>Nuestro Catálogo</h2>
+    </div>
+
+    <div class="grid-container">
+        <div class="item destacado" onclick="window.location.href='URL_VIDEO_CCTV'">
+            <h3>Sistemas de Videovigilancia</h3>
+        </div>
+
+        <div class="item" onclick="window.location.href='URL_FLYER_PANTALLAS'">
+            <h3>Pantallas Interactivas</h3>
+        </div>
+
+        <div class="item" onclick="window.location.href='URL_FLYER_REDES'">
+            <h3>Redes & Wi-Fi</h3>
+        </div>
+
+        <div class="item" onclick="window.location.href='URL_VIDEO_AUDIO'">
+            <h3>Audio Escolar</h3>
+        </div>
+        
+        </div>
+
+</body>
+</html>
