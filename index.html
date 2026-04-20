@@ -158,6 +158,22 @@
     transition: transform 0.1s, background 0.2s;
 }
 
+/* Esto hace que la tarjeta ocupe las dos columnas del grid */
+.card-full-width {
+    grid-column: span 2; 
+    flex-direction: row !important; /* Cambia a horizontal para aprovechar el ancho */
+    justify-content: space-around !important;
+    padding: 20px !important;
+    gap: 15px;
+}
+
+/* Ajuste para que en pantallas muy pequeñas se vea bien */
+@media (max-width: 350px) {
+    .card-full-width {
+        flex-direction: column !important;
+    }
+}
+
 /* Mantenemos el efecto de "presión" al tocar en móvil */
 .card-link-box:active {
     transform: scale(0.96);
@@ -215,12 +231,14 @@
             <h3>Conmutadores</h3>
         </div>
 
-        <a href="https://bytecomtec.com/polizas-servicio-2026.pdf" target="_blank" class="card-link-box success">
+        <a href="TU_URL_AQUI" target="_blank" class="card-link-box card-full-width">
             <span class="icon">🛠️</span>
-            <h3>Pólizas de Servicio 2026</h3>
-            <small style="color: var(--primary); font-size: 0.7rem; font-weight: bold; margin-top: 5px; display: block;">VER DETALLES</small>
+            <div class="text-content">
+                <h3>Pólizas de Servicio 2026</h3>
+            <p style="font-size: 0.75rem; color: #666; margin: 2px 0;">Soporte técnico integral para instituciones educativas</p>
+            </div>
+            <small style="color: var(--primary); font-size: 0.7rem; font-weight: bold;">CLICK PARA VER DETALLES</small>
         </a>
-
     </div>
 
     <div id="modalVisual" class="modal">
