@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="2.5899999cm"
+   height="2.9400001cm"
+   viewBox="0 0 25.899998 29.400002"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   sodipodi:docname="logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="2.1534615"
+     inkscape:cx="73.60243"
+     inkscape:cy="138.84622"
+     inkscape:window-width="1920"
+     inkscape:window-height="1048"
+     inkscape:window-x="1080"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4164"
+       id="linearGradient30610"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(10.571928,0,0,10.571928,260.70627,-27.598016)"
+       x1="11.968545"
+       y1="35.577042"
+       x2="15.435372"
+       y2="15.957891" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4164">
+      <stop
+         style="stop-color:#44aa00;stop-opacity:1;"
+         offset="0"
+         id="stop4166" />
+      <stop
+         id="stop4172"
+         offset="0.49099025"
+         style="stop-color:#f4faf9;stop-opacity:0.94117647" />
+      <stop
+         style="stop-color:#73c700;stop-opacity:0.90196079"
+         offset="1"
+         id="stop4168" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4152"
+       id="linearGradient30612"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(10.571928,0,0,10.571928,468.15289,31.39785)"
+       x1="8.7072353"
+       y1="12.174284"
+       x2="-12.445721"
+       y2="33.687412" />
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4152">
+      <stop
+         style="stop-color:#fd070b;stop-opacity:1"
+         offset="0"
+         id="stop4154" />
+      <stop
+         id="stop4160"
+         offset="0.34530523"
+         style="stop-color:#f4980b;stop-opacity:1" />
+      <stop
+         style="stop-color:#e04102;stop-opacity:1"
+         offset="0.52803791"
+         id="stop4162" />
+      <stop
+         style="stop-color:#f4490b;stop-opacity:0.1519337"
+         offset="1"
+         id="stop4156" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6241"
+       id="radialGradient9860"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.74890623,0,0,0.13724436,109.0144,36.28895)"
+       cx="37.169811"
+       cy="44.95512"
+       fx="37.169811"
+       fy="44.95512"
+       r="36.300938" />
+    <linearGradient
+       id="linearGradient6241"
+       inkscape:collect="always">
+      <stop
+         id="stop6243"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+      <stop
+         id="stop6245"
+         offset="1"
+         style="stop-color:#000000;stop-opacity:0;" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6241"
+       id="radialGradient1"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.74890623,0,0,0.13724436,109.0144,36.28895)"
+       cx="37.169811"
+       cy="44.95512"
+       fx="37.169811"
+       fy="44.95512"
+       r="36.300938" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6241"
+       id="radialGradient2"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.74890623,0,0,0.13724436,109.0144,36.28895)"
+       cx="37.169811"
+       cy="44.95512"
+       fx="37.169811"
+       fy="44.95512"
+       r="36.300938" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6241"
+       id="radialGradient4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.74890623,0,0,0.13724436,109.0144,36.28895)"
+       cx="37.169811"
+       cy="44.95512"
+       fx="37.169811"
+       fy="44.95512"
+       r="36.300938" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6241"
+       id="radialGradient8523"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.74890623,0,0,0.13724436,111.58538,40.426963)"
+       cx="37.169811"
+       cy="44.95512"
+       fx="37.169811"
+       fy="44.95512"
+       r="36.300938" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6241"
+       id="radialGradient8"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.74890623,0,0,0.13724436,111.58538,40.426963)"
+       cx="37.169811"
+       cy="44.95512"
+       fx="37.169811"
+       fy="44.95512"
+       r="36.300938" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g9830"
+       transform="matrix(1.1543227,0,0,1.1543227,-2.8632807,-2.0411008)"
+       inkscape:export-filename="logo.png"
+       inkscape:export-xdpi="250"
+       inkscape:export-ydpi="250">
+      <g
+         id="g30414"
+         inkscape:export-filename="Logo-2024.png"
+         inkscape:export-xdpi="300"
+         inkscape:export-ydpi="300"
+         transform="matrix(0.41171458,0,0,0.41171458,-19.315627,-7.7950357)">
+        <circle
+           style="fill:#3872ef;fill-opacity:1;stroke-width:0.404"
+           id="circle30384"
+           cx="89.421471"
+           cy="27.214251"
+           r="2.5805461" />
+        <circle
+           style="fill:#f08609;fill-opacity:1;stroke-width:0.372357"
+           id="circle30386"
+           cx="64.829979"
+           cy="39.626488"
+           r="2.3784246" />
+        <circle
+           style="fill:#28577a;fill-opacity:1;stroke-width:1.39632"
+           id="circle30388"
+           cx="80.765083"
+           cy="37.732689"
+           r="8.9189854" />
+        <circle
+           style="fill:#7ac62c;fill-opacity:0.996078;stroke-width:1.73749"
+           id="circle30390"
+           cx="77.873283"
+           cy="52.31073"
+           r="11.098216" />
+        <circle
+           style="fill:#3872ef;fill-opacity:1;stroke-width:2.37408"
+           id="circle30392"
+           cx="86.273582"
+           cy="50.194748"
+           r="15.164414" />
+        <circle
+           style="opacity:0.615279;fill:#ff6600;fill-opacity:1;stroke-width:1.3559"
+           id="circle30394"
+           cx="91.714211"
+           cy="42.65992"
+           r="8.660779" />
+        <circle
+           style="fill:#2b5b84;fill-opacity:1;stroke-width:1.98577"
+           id="circle30396"
+           cx="81.981148"
+           cy="48.372978"
+           r="12.684093" />
+        <circle
+           style="fill:#f9f9f9;fill-opacity:1;stroke-width:1.85616"
+           id="circle30398"
+           cx="81.079323"
+           cy="48.753372"
+           r="11.856173" />
+        <g
+           id="g30406"
+           transform="matrix(0.05478736,0,0,0.05478736,54.413103,36.7078)">
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="path30400"
+             d="m 480.30099,397.6956 c 67.45377,-58.06995 73.63718,-62.43761 119.67519,-107.68521 69.23249,-83.62112 25.64263,-111.09892 -67.2916,-127.51263 L 331.81993,137.26459 Z"
+             style="fill:#19709c;fill-opacity:0.941989;fill-rule:evenodd;stroke:none;stroke-width:2.11439;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             inkscape:export-filename="/home/pedro/Empresa/Documentos Empresariales/Diseños y Logos/2016/Redes-sociales2.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             sodipodi:nodetypes="ccccc"
+             inkscape:connector-curvature="0"
+             id="path30402"
+             d="m 329.47102,135.79893 c 44.05375,-25.86589 54.83263,-31.28313 111.31527,-60.414603 57.81048,-25.294048 97.1038,-4.303687 96.1445,32.793843 -11.47276,95.8449 -31.29735,175.63218 -56.46054,290.3318 z"
+             style="fill:url(#linearGradient30610);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.11439;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             inkscape:export-filename="/home/pedro/Empresa/Documentos Empresariales/Diseños y Logos/2016/Redes-sociales2.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+          <path
+             sodipodi:nodetypes="ccscc"
+             inkscape:connector-curvature="0"
+             id="path30404"
+             d="M 480.07253,398.00215 329.0791,135.79693 c 64.28308,21.77315 146.52288,35.65093 196.94665,61.7646 17.18181,8.89821 42.88227,28.73022 44.78511,59.17247 3.50492,43.28055 -26.81072,78.24421 -90.73833,141.26815 z"
+             style="fill:url(#linearGradient30612);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.11439;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             inkscape:export-filename="/home/pedro/Empresa/Documentos Empresariales/Diseños y Logos/2016/Redes-sociales2.png"
+             inkscape:export-xdpi="300"
+             inkscape:export-ydpi="300" />
+        </g>
+        <circle
+           style="fill:#f08609;fill-opacity:1;stroke-width:0.195374"
+           id="circle30408"
+           cx="93.462982"
+           cy="32.06131"
+           r="1.2479469" />
+        <circle
+           style="fill:#7ec733;fill-opacity:1;stroke-width:0.195374"
+           id="circle30410"
+           cx="77.301338"
+           cy="67.123772"
+           r="1.2479469" />
+        <circle
+           style="fill:#28577a;fill-opacity:1;stroke-width:0.195374"
+           id="circle30412"
+           cx="91.317863"
+           cy="67.250237"
+           r="1.2479469" />
+      </g>
+      <g
+         id="g30382"
+         transform="matrix(0.34358486,0,0,0.34358486,-33.966341,7.6225545)">
+        <text
+           inkscape:export-ydpi="250"
+           inkscape:export-xdpi="250"
+           inkscape:export-filename="/home/pedro/Empresa/Documentos Empresariales/Diseños y Logos/2016/Leyenda2.png"
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:27.9684px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:url(#radialGradient9860);stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="108.75517"
+           y="45.34021"
+           id="text30376"><tspan
+             sodipodi:role="line"
+             id="tspan30374"
+             x="108.75517"
+             y="45.34021"
+             style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11.2336px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold Italic';letter-spacing:-0.561681px;stroke:url(#radialGradient9860);stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"><tspan
+               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold Italic';fill:#19289c;fill-opacity:0.941176;stroke:url(#radialGradient9860);stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.941176"
+               id="tspan30370">Byte</tspan><tspan
+               style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold Italic';fill:#ff6600;fill-opacity:1;stroke:url(#radialGradient9860);stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               id="tspan30372">comtec</tspan></tspan></text>
+      </g>
+      <g
+         id="g8521"
+         transform="matrix(0.43530369,0,0,0.43530369,-38.539994,5.2331619)">
+        <text
+           inkscape:export-ydpi="250"
+           inkscape:export-xdpi="250"
+           inkscape:export-filename="/home/pedro/Empresa/Documentos Empresariales/Diseños y Logos/2016/Leyenda2.png"
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:8.30357px;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:url(#radialGradient8523);stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           x="111.32616"
+           y="49.478222"
+           id="text8519"><tspan
+             sodipodi:role="line"
+             id="tspan8517"
+             x="111.32616"
+             y="49.478222"
+             style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.30357px;line-height:1;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Bold Italic';letter-spacing:-0.561681px;stroke:url(#radialGradient8523);stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">Escuelas</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
